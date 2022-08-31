@@ -24,9 +24,7 @@ def filetest():
                     csv_output.writerow(["producer_id","producer_name","product_id",
                                          "product_name","product_unit","quantity","specifications_id"
                                          ,"delivery_datetime","destination_country_code"])  #header
-                    for line in m:
-                        count =+1
-                        if count  < 10000:
-                             csv_output.writerow(line)
+                    for line in m:             
+                        csv_output.writerow(line)
 filetest()
 
